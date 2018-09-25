@@ -2,4 +2,4 @@
 StatSim examples
 
 ## Simple examples
-* [Accumulator](https://statsim.com/?m=accumulator)
+* [Accumulator](https://statsim.com/app/?m=accumulator)
