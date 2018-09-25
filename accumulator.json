@@ -1,0 +1,28 @@
+{
+  "blocks": [
+    {
+      "distribution": "Gaussian",
+      "name": "R",
+      "once": false,
+      "params": {
+        "mu": "10",
+        "sigma": "7"
+      },
+      "show": true,
+      "type": "Random Variable",
+      "typeCode": 0
+    },
+    {
+      "initialValue": 0,
+      "history": true,
+      "name": "A",
+      "show": true,
+      "type": "Accumulator",
+      "typeCode": 3,
+      "value": "R"
+    }
+  ],
+  "method": "rejection",
+  "steps": "50",
+  "samples": 3000
+}
