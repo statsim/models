@@ -1,0 +1,50 @@
+{
+  "blocks": [
+    {
+      "distribution": "Uniform",
+      "name": "X",
+      "once": false,
+      "params": {
+        "a": "-1",
+        "b": "1"
+      },
+      "show": true,
+      "type": "Random Variable",
+      "typeCode": 0
+    },
+    {
+      "distribution": "Uniform",
+      "name": "Y",
+      "once": false,
+      "params": {
+        "a": "-1",
+        "b": "1"
+      },
+      "show": true,
+      "type": "Random Variable",
+      "typeCode": 0
+    },
+    {
+      "initialValue": 0,
+      "history": false,
+      "name": "Sa",
+      "show": true,
+      "type": "Accumulator",
+      "typeCode": 3,
+      "value": "((X * X + Y * Y < 1) ? 1 : 0)"
+    },
+    {
+      "name": "Pi",
+      "history": false,
+      "show": true,
+      "type": "Expression",
+      "typeCode": 1,
+      "value": "Sa * 4 / _i"
+    }
+  ],
+  "steps": "200000",
+  "method": "deterministic",
+  "methodParams": {
+    "samples": 1000
+  }
+}
