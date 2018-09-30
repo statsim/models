@@ -1,28 +1,35 @@
-{
-  "blocks": [
-    {
-      "distribution": "Gaussian",
-      "name": "R",
-      "once": false,
-      "params": {
-        "mu": "10",
-        "sigma": "7"
+[
+  {
+    "blocks": [
+      {
+        "distribution": "Gaussian",
+        "name": "X",
+        "once": false,
+        "params": {
+          "mu": "4",
+          "sigma": "2"
+        },
+        "show": false,
+        "type": "Random Variable",
+        "typeCode": 0
       },
-      "show": true,
-      "type": "Random Variable",
-      "typeCode": 0
+      {
+        "initialValue": 0,
+        "history": true,
+        "name": "A1",
+        "show": true,
+        "type": "Accumulator",
+        "typeCode": 3,
+        "value": "X"
+      }
+    ],
+    "modelParams": {
+      "name": "Pi",
+      "steps": "20",
+      "method": "rejection"
     },
-    {
-      "initialValue": 0,
-      "history": true,
-      "name": "A",
-      "show": true,
-      "type": "Accumulator",
-      "typeCode": 3,
-      "value": "R"
+    "methodParams": {
+      "samples": "1000"
     }
-  ],
-  "method": "rejection",
-  "steps": "50",
-  "samples": 3000
-}
+  }
+]

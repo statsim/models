@@ -1,4 +1,4 @@
-{
+[{
   "blocks": [
     {
       "distribution": "Uniform",
@@ -42,9 +42,12 @@
       "value": "Sa * 4 / _i"
     }
   ],
-  "steps": "200000",
-  "method": "deterministic",
+  "modelParams": {
+    "name": "Pi",
+    "steps": "200000",
+    "method": "deterministic"
+  },
   "methodParams": {
     "samples": 1000
   }
-}
+}]
