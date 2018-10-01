@@ -1,0 +1,69 @@
+[
+  {
+    "modelParams": {
+      "name": "PredatorPrey",
+      "description": "Simulation of predator-prey model using Lotka-Voltera equations.",
+      "steps": "700",
+      "method": "deterministic"
+    },
+    "blocks": [
+      {
+        "initialValue": "800",
+        "history": true,
+        "name": "Prey",
+        "show": true,
+        "type": "Accumulator",
+        "typeCode": 3,
+        "value": "Prey * PreyGrowthRate  - Predator * ConsumeRate * Prey"
+      },
+      {
+        "initialValue": "100",
+        "history": true,
+        "name": "Predator",
+        "show": true,
+        "type": "Accumulator",
+        "typeCode": 3,
+        "value": "PredatorIncreaseRate * Prey * Predator - PredatorDeathRate * Predator"
+      },
+      {
+        "file": null,
+        "name": "PreyGrowthRate",
+        "show": false,
+        "type": "Data",
+        "typeCode": 2,
+        "useAsParameter": false,
+        "value": "0.049"
+      },
+      {
+        "file": null,
+        "name": "ConsumeRate",
+        "show": false,
+        "type": "Data",
+        "typeCode": 2,
+        "useAsParameter": false,
+        "value": "0.00027"
+      },
+      {
+        "file": null,
+        "name": "PredatorDeathRate",
+        "show": false,
+        "type": "Data",
+        "typeCode": 2,
+        "useAsParameter": false,
+        "value": "0.047"
+      },
+      {
+        "file": null,
+        "name": "PredatorIncreaseRate",
+        "show": false,
+        "type": "Data",
+        "typeCode": 2,
+        "useAsParameter": false,
+        "value": "0.0001"
+      }
+    ],
+    "methodParams": {
+      "samples": ""
+    }
+  }
+]
