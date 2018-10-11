@@ -1,0 +1,87 @@
+[
+  {
+    "modelParams": {
+      "name": "Main",
+      "description": "Simple autoregressive model where the expected value of y[n] is α + βy[n−1], with noise scaled as σ",
+      "steps": 1,
+      "method": "MCMC"
+    },
+    "blocks": [
+      {
+        "name": "T",
+        "show": true,
+        "type": "Data",
+        "typeCode": 2,
+        "useAsParameter": false,
+        "dims": "",
+        "value": "1,2.96,7.05,15.1,31.5,64.1,129"
+      },
+      {
+        "distribution": "Uniform",
+        "name": "a",
+        "once": false,
+        "params": {
+          "a": "0",
+          "b": "20"
+        },
+        "show": true,
+        "type": "Random Variable",
+        "typeCode": 0,
+        "dims": "1"
+      },
+      {
+        "distribution": "Uniform",
+        "name": "b",
+        "once": false,
+        "params": {
+          "a": "0",
+          "b": "4"
+        },
+        "show": true,
+        "type": "Random Variable",
+        "typeCode": 0,
+        "dims": "1"
+      },
+      {
+        "distribution": "Uniform",
+        "name": "sigma",
+        "once": false,
+        "params": {
+          "a": "0",
+          "b": "5"
+        },
+        "show": true,
+        "type": "Random Variable",
+        "typeCode": 0,
+        "dims": "1"
+      },
+      {
+        "distribution": "Gaussian",
+        "params": {
+          "sigma": "sigma",
+          "mu": "a + b * T[((_j > 1) ? _j-1 : _j)]"
+        },
+        "type": "Observer",
+        "typeCode": 4,
+        "value": "T"
+      },
+      {
+        "distribution": "Gaussian",
+        "name": "Tnext",
+        "once": false,
+        "params": {
+          "mu": "a + b * 129",
+          "sigma": "sigma"
+        },
+        "show": true,
+        "type": "Random Variable",
+        "typeCode": 0,
+        "dims": "1"
+      }
+    ],
+    "methodParams": {
+      "samples": "100000",
+      "burn": "2000"
+    }
+  }
+]
