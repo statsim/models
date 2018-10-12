@@ -67,7 +67,7 @@
       {
         "distribution": "Gaussian",
         "params": {
-          "mu": "a + b * x[_j]",
+          "mu": "a + b * x",
           "sigma": "sigma"
         },
         "type": "Observer",
