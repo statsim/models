@@ -76,7 +76,8 @@
       }
     ],
     "methodParams": {
-      "samples": 1000
+      "samples": 1000,
+      "lag": 100
     }
   }
 ]
