@@ -80,8 +80,9 @@
       }
     ],
     "methodParams": {
-      "samples": "100000",
-      "burn": "2000"
+      "samples": "2000",
+      "burn": "1000",
+      "lag": "200"
     }
   }
 ]
