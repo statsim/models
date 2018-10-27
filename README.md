@@ -1,10 +1,13 @@
 # StatSim Models
 StatSim examples
 
-## Simple examples
+## Deterministic models
+* [Monthly payment for a fixed rate mortgage](https://statsim.com/app/?m=loan)
+* [Predator-prey model (Lotka-Voltera)](https://statsim.com/app/?m=predatorprey)
+
+## Random variables
 * [Accumulator](https://statsim.com/app/?m=accumulator)
 * [Pi approximation](https://statsim.com/app/?m=pi)
-* [Predator-prey model (Lotka-Voltera)](https://statsim.com/app/?m=predatorprey)
 
 ## Bayesian inference
 * [Linear regression](https://statsim.com/app/?m=linreg)

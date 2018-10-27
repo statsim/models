@@ -1,0 +1,66 @@
+[
+  {
+    "modelParams": {
+      "name": "Mortgage Calculator",
+      "description": "Monthly payment calculator for a fixed rate mortgage.",
+      "steps": 1,
+      "method": "deterministic"
+    },
+    "methodParams": {
+      "samples": 1000
+    },
+    "blocks": [
+      {
+        "type": "Data",
+        "name": "Principal",
+        "show": false,
+        "typeCode": 2,
+        "useAsParameter": true,
+        "dims": "",
+        "value": "200000"
+      },
+      {
+        "type": "Data",
+        "name": "AnnualRate",
+        "show": false,
+        "typeCode": 2,
+        "useAsParameter": true,
+        "dims": "",
+        "value": "9"
+      },
+      {
+        "type": "Data",
+        "name": "Term",
+        "show": false,
+        "typeCode": 2,
+        "useAsParameter": true,
+        "dims": "",
+        "value": "360"
+      },
+      {
+        "type": "Expression",
+        "name": "MonthlyRate",
+        "history": false,
+        "show": false,
+        "typeCode": 1,
+        "value": "AnnualRate / (12 * 100)"
+      },
+      {
+        "type": "Expression",
+        "name": "Pow",
+        "history": false,
+        "show": false,
+        "typeCode": 1,
+        "value": "Math.pow(1 + MonthlyRate, Term)"
+      },
+      {
+        "type": "Expression",
+        "name": "Payment",
+        "history": false,
+        "show": true,
+        "typeCode": 1,
+        "value": "Principal * MonthlyRate *  Pow / (Pow - 1)"
+      }
+    ]
+  }
+]
