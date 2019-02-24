@@ -1,0 +1,79 @@
+[
+  {
+    "modelParams": {
+      "name": "Main",
+      "description": "",
+      "steps": 1,
+      "method": "optimize"
+    },
+    "methodParams": {
+      "samples": "1",
+      "optMethod": "adam",
+      "steps": "10000",
+      "stepSize": "0.2"
+    },
+    "blocks": [
+      {
+        "type": "Data",
+        "name": "x",
+        "show": false,
+        "typeCode": 2,
+        "useAsParameter": true,
+        "dims": "",
+        "value": "[ [2,7], [6,6], [12,8] ]"
+      },
+      {
+        "type": "Data",
+        "name": "y",
+        "show": false,
+        "typeCode": 2,
+        "useAsParameter": true,
+        "dims": "",
+        "value": "9, 12, 20"
+      },
+      {
+        "type": "Data",
+        "name": "xpred",
+        "show": false,
+        "typeCode": 2,
+        "useAsParameter": true,
+        "dims": "",
+        "value": "21, 13"
+      },
+      {
+        "type": "Neural Net",
+        "initialValue": 0,
+        "history": false,
+        "name": "net",
+        "typeCode": 6,
+        "layers": [
+          {
+            "type": "affine",
+            "name": "layer1",
+            "in": "2",
+            "out": "1"
+          }
+        ],
+        "convert": true
+      },
+      {
+        "type": "Observer",
+        "distribution": "Gaussian",
+        "params": {
+          "sigma": "0.3",
+          "mu": "net(x)"
+        },
+        "typeCode": 4,
+        "value": "y"
+      },
+      {
+        "type": "Expression",
+        "name": "ypred",
+        "history": false,
+        "show": true,
+        "typeCode": 1,
+        "value": "net(xpred)"
+      }
+    ]
+  }
+]

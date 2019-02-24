@@ -1,0 +1,154 @@
+[
+  {
+    "modelParams": {
+      "name": "Compound Interest",
+      "description": "",
+      "steps": "Years",
+      "method": "deterministic",
+      "include": []
+    },
+    "methodParams": {
+      "chains": 1,
+      "samples": 1000
+    },
+    "blocks": [
+      {
+        "type": "Data",
+        "name": "Initial Principal",
+        "show": false,
+        "typeCode": 2,
+        "useAsParameter": true,
+        "dims": "",
+        "value": "10000",
+        "units": "$",
+        "id": "b28354103",
+        "minimized": true,
+        "pos": {
+          "x": -171,
+          "y": -52
+        }
+      },
+      {
+        "type": "Data",
+        "name": "Annual Deposit",
+        "show": false,
+        "typeCode": 2,
+        "useAsParameter": true,
+        "dims": "",
+        "value": "0",
+        "units": "$",
+        "dataType": "auto",
+        "id": "b43587373",
+        "minimized": true,
+        "pos": {
+          "x": -14,
+          "y": -151
+        }
+      },
+      {
+        "type": "Data",
+        "name": "Interest Rate",
+        "show": false,
+        "typeCode": 2,
+        "useAsParameter": true,
+        "dims": "",
+        "value": "10",
+        "units": "%",
+        "id": "b70492644",
+        "minimized": true,
+        "pos": {
+          "x": 211,
+          "y": -35
+        }
+      },
+      {
+        "type": "Data",
+        "name": "Years",
+        "show": false,
+        "typeCode": 2,
+        "useAsParameter": true,
+        "dims": "",
+        "value": "10",
+        "units": "",
+        "id": "b90568377",
+        "minimized": true,
+        "pos": {
+          "x": 106,
+          "y": -276
+        }
+      },
+      {
+        "type": "Expression",
+        "name": "Interest",
+        "history": true,
+        "show": false,
+        "typeCode": 1,
+        "value": "(Total Interest + Total Principal) * Interest Rate / 100",
+        "units": "",
+        "id": "b75889802",
+        "minimized": true,
+        "icon": "",
+        "color": "#0097cc",
+        "size": 40,
+        "pos": {
+          "x": 95,
+          "y": 35
+        }
+      },
+      {
+        "type": "Accumulator",
+        "initialValue": 0,
+        "history": true,
+        "name": "Total Interest",
+        "show": true,
+        "typeCode": 3,
+        "value": "Interest",
+        "min": "",
+        "max": "",
+        "units": "",
+        "id": "b1304607",
+        "minimized": true,
+        "pos": {
+          "x": 55,
+          "y": 145
+        }
+      },
+      {
+        "type": "Accumulator",
+        "initialValue": "Initial Principal",
+        "history": true,
+        "name": "Total Principal",
+        "show": true,
+        "typeCode": 3,
+        "value": "Annual Deposit",
+        "min": "",
+        "max": "",
+        "units": "$",
+        "id": "b74325876",
+        "minimized": true,
+        "pos": {
+          "x": -39,
+          "y": -20
+        }
+      },
+      {
+        "type": "Expression",
+        "name": "Total Balance",
+        "history": true,
+        "show": true,
+        "typeCode": 1,
+        "value": "Total Interest + Total Principal",
+        "units": "",
+        "id": "b90806914",
+        "minimized": false,
+        "icon": "",
+        "color": "#0097cc",
+        "size": 40,
+        "pos": {
+          "x": -65,
+          "y": 116
+        }
+      }
+    ]
+  }
+]

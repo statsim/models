@@ -1,0 +1,103 @@
+[
+  {
+    "modelParams": {
+      "name": "Cookie Problem",
+      "description": "http://allendowney.blogspot.com/2011/10/my-favorite-bayess-theorem-problems.html",
+      "steps": 1,
+      "method": "rejection",
+      "include": []
+    },
+    "blocks": [
+      {
+        "id": "b86790164",
+        "distribution": "Categorical",
+        "name": "Urn1Cookie",
+        "once": false,
+        "params": {
+          "vs": "\"Vanilla\", \"Chocolate\"",
+          "ps": "30/40, 10/40"
+        },
+        "show": false,
+        "type": "Random Variable",
+        "typeCode": 0,
+        "dims": "1",
+        "units": "",
+        "minimized": false,
+        "pos": {
+          "x": -56,
+          "y": -119
+        }
+      },
+      {
+        "id": "b81040578",
+        "distribution": "Categorical",
+        "name": "Urn2Cookie",
+        "once": false,
+        "params": {
+          "ps": "20/40, 20/40",
+          "vs": "\"Vanilla\", \"Chocolate\""
+        },
+        "show": false,
+        "type": "Random Variable",
+        "typeCode": 0,
+        "dims": "1",
+        "units": "",
+        "minimized": false,
+        "pos": {
+          "x": 37,
+          "y": 126
+        }
+      },
+      {
+        "id": "b80865221",
+        "distribution": "Categorical",
+        "name": "Flip",
+        "once": false,
+        "params": {
+          "ps": "0.5, 0.5",
+          "vs": "\"Urn1\", \"Urn2\""
+        },
+        "show": true,
+        "type": "Random Variable",
+        "typeCode": 0,
+        "dims": "1",
+        "units": "",
+        "minimized": false,
+        "pos": {
+          "x": 125,
+          "y": -43
+        }
+      },
+      {
+        "id": "b62071875",
+        "name": "Cookie",
+        "history": false,
+        "show": false,
+        "type": "Expression",
+        "typeCode": 1,
+        "value": "(Flip === \"Urn1\") ? Urn1Cookie : Urn2Cookie",
+        "units": "",
+        "minimized": false,
+        "pos": {
+          "x": 2,
+          "y": -1
+        }
+      },
+      {
+        "id": "b92319960",
+        "type": "Condition",
+        "typeCode": 5,
+        "value": "Cookie === \"Vanilla\"",
+        "minimized": false,
+        "pos": {
+          "x": -125,
+          "y": 52
+        }
+      }
+    ],
+    "methodParams": {
+      "chains": 1,
+      "samples": "100000"
+    }
+  }
+]

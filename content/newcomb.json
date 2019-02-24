@@ -1,0 +1,113 @@
+[
+  {
+    "modelParams": {
+      "name": "Speed of light (Normal)",
+      "description": "Simon Newcomb's measurements (1882) of the speed of light. The data are recorded as deviations from 24800 nanoseconds. ",
+      "steps": 1,
+      "method": "MCMC",
+      "include": []
+    },
+    "blocks": [
+      {
+        "id": "b29646859",
+        "name": "D",
+        "show": false,
+        "type": "Data",
+        "typeCode": 2,
+        "useAsParameter": false,
+        "dims": "",
+        "value": "28, 26, 33, 24, 34, -44, 27, 16, 40, -2, 29, 22, 24, 21, 25, 30, 23, 29, 31, 19, 24, 20, 36, 32, 36, 28, 25, 21, 28, 29, 37, 25, 28, 26, 30, 32, 36, 26, 30, 22, 36, 23, 27, 27, 28, 27, 31, 27, 26, 33, 26, 32, 32, 24, 39, 28, 24, 25, 32, 25, 29, 27, 28, 29, 16, 23",
+        "units": "",
+        "dataType": "",
+        "dataCategories": "",
+        "minimized": false,
+        "pos": {
+          "x": -107,
+          "y": 128
+        }
+      },
+      {
+        "id": "b73947402",
+        "distribution": "Uniform",
+        "name": "mu",
+        "once": false,
+        "params": {
+          "a": "-40",
+          "b": "40"
+        },
+        "show": true,
+        "type": "Random Variable",
+        "typeCode": 0,
+        "dims": "1",
+        "units": "",
+        "minimized": false,
+        "pos": {
+          "x": 87,
+          "y": -60
+        }
+      },
+      {
+        "id": "b66278715",
+        "distribution": "Uniform",
+        "name": "sigma",
+        "once": false,
+        "params": {
+          "a": "0",
+          "b": "20"
+        },
+        "show": true,
+        "type": "Random Variable",
+        "typeCode": 0,
+        "dims": "1",
+        "units": "",
+        "minimized": false,
+        "pos": {
+          "x": -27,
+          "y": -39
+        }
+      },
+      {
+        "id": "b32658713",
+        "distribution": "Gaussian",
+        "params": {
+          "mu": "mu",
+          "sigma": "sigma"
+        },
+        "type": "Observer",
+        "typeCode": 4,
+        "value": "D",
+        "minimized": false,
+        "pos": {
+          "x": -45,
+          "y": 10
+        }
+      },
+      {
+        "id": "b48602906",
+        "distribution": "Gaussian",
+        "name": "Drep",
+        "once": false,
+        "params": {
+          "mu": "mu",
+          "sigma": "sigma"
+        },
+        "show": true,
+        "type": "Random Variable",
+        "typeCode": 0,
+        "dims": "1",
+        "units": "",
+        "minimized": false,
+        "pos": {
+          "x": 83,
+          "y": 50
+        }
+      }
+    ],
+    "methodParams": {
+      "chains": "3",
+      "samples": "3500",
+      "lag": "30",
+      "burn": "500"
+    }
+  }
+]

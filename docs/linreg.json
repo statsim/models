@@ -1,0 +1,83 @@
+[
+  {
+    "modelParams": {
+      "name": "Main",
+      "description": "",
+      "steps": 1,
+      "method": "MCMC"
+    },
+    "blocks": [
+      {
+        "name": "x",
+        "show": false,
+        "type": "Data",
+        "typeCode": 2,
+        "useAsParameter": false,
+        "dims": "",
+        "value": "95,85,80,70,60"
+      },
+      {
+        "name": "y",
+        "show": false,
+        "type": "Data",
+        "typeCode": 2,
+        "useAsParameter": false,
+        "dims": "",
+        "value": "85,95,70,65,70"
+      },
+      {
+        "distribution": "Uniform",
+        "name": "a",
+        "once": false,
+        "params": {
+          "a": "0",
+          "b": "50"
+        },
+        "show": true,
+        "type": "Random Variable",
+        "typeCode": 0,
+        "dims": "1"
+      },
+      {
+        "distribution": "Uniform",
+        "name": "b",
+        "once": false,
+        "params": {
+          "a": "0",
+          "b": "2"
+        },
+        "show": true,
+        "type": "Random Variable",
+        "typeCode": 0,
+        "dims": "1"
+      },
+      {
+        "distribution": "Uniform",
+        "name": "sigma",
+        "once": false,
+        "params": {
+          "a": "0",
+          "b": "10"
+        },
+        "show": true,
+        "type": "Random Variable",
+        "typeCode": 0,
+        "dims": "1"
+      },
+      {
+        "distribution": "Gaussian",
+        "params": {
+          "mu": "a + b * x",
+          "sigma": "sigma"
+        },
+        "type": "Observer",
+        "typeCode": 4,
+        "value": "y"
+      }
+    ],
+    "methodParams": {
+      "samples": 1000,
+      "lag": 100
+    }
+  }
+]
