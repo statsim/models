@@ -34,8 +34,6 @@ SOCIAL = (
  ('Github', 'https://github.com/statsim')
 )
 
-DEFAULT_PAGINATION = False
-
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['i18n_subsites', 'ipynb.markup']
 I18N_SUBSITES = {
@@ -45,12 +43,11 @@ I18N_SUBSITES = {
 }
 
 IGNORE_FILES = ['*-checkpoint.ipynb', '*.js', '*.py', '__pycache__', '*.pyc', '*.nbdata']
-IPYNB_USE_METACELL = True
 
-THEME = 'themes/pelican-blue'
+THEME = '../theme'
 DISPLAY_FOOTER = False
 DISPLAY_SUMMARY = True
-ARTICLE_ORDER_BY = 'filename'
+ARTICLE_ORDER_BY = 'reversed-date'
 DEFAULT_PAGINATION = False
 
 ARTICLE_URL = '{slug}/'
