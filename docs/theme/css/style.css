@@ -88,6 +88,10 @@ body .prompt {
   display: none !important;
 }
 
+.iframer-wrapper iframe {
+  border: 1px solid #BBB;
+}
+
 div.output_subarea {
   max-width: 100% !important;
 }
