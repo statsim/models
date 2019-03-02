@@ -21,6 +21,11 @@ h2.post_detail, .post-summary {
   color: #8c8c96;
 }
 
+.twitter-follow-button {
+  display: block;
+  margin: 15px auto;
+}
+
 article code {
   background: #edebf5;
   padding: 1px 4px;
@@ -79,9 +84,10 @@ body > article, footer {
   padding: 20px 80px 10px;
 }
 
-body .input, body .prompt {
+body .prompt {
   display: none !important;
 }
+
 div.output_subarea {
   max-width: 100% !important;
 }

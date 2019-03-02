@@ -26,18 +26,19 @@
 
         <!-- Twitter Feed -->
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="">
+        <meta name="twitter:site" content="statsimcom">
         <meta name="twitter:image" content="">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7770107-2"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-7770107-2');
-        </script>
 
-    <meta name="twitter:creator" content="">
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7770107-2"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-7770107-2');
+          </script>
+
+    <meta name="twitter:creator" content="statsimcom">
     <meta name="twitter:url" content="https://statsim.com/models/archives.html">
     <meta name="twitter:title" content="StatSim Models ~ Archives">
     <meta name="twitter:description" content="StatSim Models ~ Archives du site">
@@ -51,16 +52,14 @@
 <body>
 <!-- Sidebar -->
 <aside>
-    <a href="https://statsim.com/models/theme/../">
-      <img src="https://statsim.com/models/theme/images/statsim-logo.png" class="logo">
+    <a href="https://statsim.com/models">
+      <img src="https://statsim.com/models/images/logo.png" class="logo">
     </a>
-    <!--<center><a href="https://statsim.com/models"><img id="avatar" src=""></a></center>-->
     <h1>StatSim Models</h1>
-    <a href="https://statsim.com/models/theme/../">English</>
+    <a href="https://statsim.com/models/">English</a>
     <br>
-    <a href="https://statsim.com/models/theme/../ru/">Russian</>
+    <a href="https://statsim.com/models/ru/">Russian</a>
     <br>
-
 
     <nav class="nav">
         <ul class="list-bare">
@@ -81,10 +80,32 @@
                 <img src="https://statsim.com/models/theme/images/icons/rss.png"></a>
     </p>
 
+        <a class="twitter-follow-button"
+           href="https://twitter.com/statsimcom"
+           data-show-count="false"
+           data-lang="en">
+            Follow @twitterdev
+        </a>
+        <script type="text/javascript">
+            window.twttr = (function (d, s, id) {
+                var t, js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+                return window.twttr || (t = {
+                        _e: [], ready: function (f) {
+                            t._e.push(f)
+                        }
+                    });
+            }(document, "script", "twitter-wjs"));
+        </script>
+
         <h2>Categories</h2>
         <ul class="navbar">
                 <li><a
-                        href="https://statsim.com/models/category/deterministic-models-calculators/">Deterministic models, Calculators</a></li>
+                        href="https://statsim.com/models/category/deterministic-models/">Deterministic models</a></li>
         </ul>
 
         <h2 class="blog_roll_link"><br/>LINKS</h2>
@@ -108,5 +129,12 @@
 <!-- Footer -->
 
 
+<!-- Hide code blocks with specific words -->
+<script>
+  Array
+    .from(document.querySelectorAll('div.input'))
+    .filter(node => /(\/\/\/|\#\#\#)/i.test(node.innerHTML))
+    .forEach(node => node.style.display = 'none')
+</script>
 </body>
 </html>

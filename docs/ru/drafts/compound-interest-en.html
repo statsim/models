@@ -26,18 +26,19 @@
 
         <!-- Twitter Feed -->
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="">
+        <meta name="twitter:site" content="statsimcom">
         <meta name="twitter:image" content="">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7770107-2"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'UA-7770107-2');
-        </script>
 
-    <meta name="twitter:creator" content="">
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7770107-2"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-7770107-2');
+          </script>
+
+    <meta name="twitter:creator" content="statsimcom">
     <meta name="twitter:url" content="https://statsim.com/models/ru/drafts/compound-interest-en.html">
     <meta name="twitter:title" content="Модели StatSim ~ Compound interest">
     <meta name="twitter:description" content="Compound interest model with annual deposits">
@@ -51,16 +52,14 @@
 <body>
 <!-- Sidebar -->
 <aside>
-    <a href="https://statsim.com/models/ru/../theme/../">
-      <img src="https://statsim.com/models/ru/../theme/images/statsim-logo.png" class="logo">
+    <a href="https://statsim.com/models/ru">
+      <img src="https://statsim.com/models/images/logo.png" class="logo">
     </a>
-    <!--<center><a href="https://statsim.com/models/ru"><img id="avatar" src=""></a></center>-->
     <h1>Модели StatSim</h1>
-    <a href="https://statsim.com/models/ru/../theme/../">English</>
+    <a href="https://statsim.com/models/">English</a>
     <br>
-    <a href="https://statsim.com/models/ru/../theme/../ru/">Russian</>
+    <a href="https://statsim.com/models/ru/">Russian</a>
     <br>
-
 
     <nav class="nav">
         <ul class="list-bare">
@@ -80,6 +79,28 @@
             <a href="https://statsim.com/models/ru/feeds/all.atom.xml" rel="alternate">
                 <img src="https://statsim.com/models/ru/../theme/images/icons/rss.png"></a>
     </p>
+
+        <a class="twitter-follow-button"
+           href="https://twitter.com/statsimcom"
+           data-show-count="false"
+           data-lang="en">
+            Follow @twitterdev
+        </a>
+        <script type="text/javascript">
+            window.twttr = (function (d, s, id) {
+                var t, js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+                return window.twttr || (t = {
+                        _e: [], ready: function (f) {
+                            t._e.push(f)
+                        }
+                    });
+            }(document, "script", "twitter-wjs"));
+        </script>
 
 
         <h2 class="blog_roll_link"><br/>LINKS</h2>
@@ -1363,13 +1384,14 @@ h6:hover .anchor-link {
                 <a href="https://statsim.com/models/ru/author/anton-zemlyansky/">Anton Zemlyansky</a>
                 <span> in </span>
                 <span class="post_category">
-                  <a href="https://statsim.com/models/ru/category/deterministic-models-calculators/" rel="bookmark" title="Permalink to Deterministic models, Calculators">
-                    Deterministic models, Calculators
+                  <a href="https://statsim.com/models/ru/category/deterministic-models/" rel="bookmark" title="Permalink to Deterministic models">
+                    Deterministic models
                   </a>
                 </span>
                 <p class="post_date">Sun 24 February 2019</p>
                 <div><span>Tags : </span>
                             <span><a href="https://statsim.com/models/ru/tag/finance/">#Finance, </a></span>
+                            <span><a href="https://statsim.com/models/ru/tag/calculators/">#Calculators, </a></span>
                 </div>
             </div>
         </article>
@@ -1379,5 +1401,12 @@ h6:hover .anchor-link {
 <!-- Footer -->
 
 
+<!-- Hide code blocks with specific words -->
+<script>
+  Array
+    .from(document.querySelectorAll('div.input'))
+    .filter(node => /(\/\/\/|\#\#\#)/i.test(node.innerHTML))
+    .forEach(node => node.style.display = 'none')
+</script>
 </body>
 </html>

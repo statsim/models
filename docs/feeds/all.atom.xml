@@ -1254,4 +1254,4 @@ h6:hover .anchor-link {
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="Finance"></category></entry></feed>
+</content><category term="Finance"></category><category term="Calculators"></category></entry></feed>
