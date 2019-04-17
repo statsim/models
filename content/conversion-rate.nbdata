@@ -1,0 +1,8 @@
+Title: Conversion rate estimation
+Slug: conversion-rate
+Lang: en
+Date: 2019-03-17 20:00
+Category: Stochastic models
+Tags: Finance, Calculators
+Author: Anton Zemlyansky
+Summary: A simple probabilistic model that calculates a website conversion rate given two params (number of total visitors and number of conversions). The output measures uncertainty about the true value of conversion rate

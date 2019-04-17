@@ -44,7 +44,7 @@ article code {
 }
 
 .latest
-{-
+{
   padding: 10px 10px;
   border-bottom: 1px solid #eee;
 }
@@ -138,6 +138,21 @@ a:hover {
 
 
 /* Code */
+div.input_area {
+  background: #eeeef1 !important;
+  border-radius: 5px !important;
+  padding: 5px !important;
+  border: none !important;
+}
+
+div.output_area {
+  background: #fff !important;
+  box-shadow: 0 0 10px #DADADA !important;
+  border-radius: 5px !important;
+  margin-top: 10px !important;
+  padding: 4px !important;
+}
+
 .highlight pre {
   font-size: 14px;
   overflow: auto;
@@ -248,6 +263,39 @@ aside .logo {
   padding: 0.33147rem 0;
 } 
 
+/* Table */
+
+/*
+.output table, .output tr, .output td, .output th, .output thead, .output tbody {
+  border: 1px solid #EFEFEF;
+  background-color: white;
+  margin: 0;
+}
+*/
+
+.output table {
+    margin-top: 0 !important;
+    font-family: sans-serif;
+    font-size:10px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #C8C8C8;
+    border-collapse: collapse;
+}
+.output table th {
+    border-width: 1px;
+    padding: 5px 8px;
+    border-style: solid;
+    border-color: #C8C8C8;
+    background-color: #EEEEF1;
+}
+.output table td {
+    border-width: 1px;
+    padding: 5px 8px;
+    border-style: solid;
+    border-color: #D3D3D3;
+    background-color: #ffffffa;
+}
 
 /*--------Responsive------------*/
 

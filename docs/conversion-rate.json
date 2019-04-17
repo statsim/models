@@ -1,0 +1,91 @@
+[
+  {
+    "modelParams": {
+      "name": "Conversion rate estimation",
+      "description": "Estimate true conversion rate (P) from the number of notal trials (N) and the number of conversions (c)",
+      "steps": 1,
+      "method": "MCMC",
+      "include": []
+    },
+    "blocks": [
+      {
+        "id": "b74387282",
+        "name": "Conversions",
+        "show": false,
+        "type": "Data",
+        "typeCode": 2,
+        "useAsParameter": true,
+        "dims": "",
+        "value": "100",
+        "units": "",
+        "dataType": "integer",
+        "dataCategories": "",
+        "minimized": false,
+        "pos": {
+          "x": 3,
+          "y": -59
+        }
+      },
+      {
+        "id": "b17850493",
+        "name": "Number of trials",
+        "show": false,
+        "type": "Data",
+        "typeCode": 2,
+        "useAsParameter": true,
+        "dims": "",
+        "value": "1000",
+        "units": "",
+        "dataType": "integer",
+        "dataCategories": "",
+        "minimized": false,
+        "pos": {
+          "x": 136,
+          "y": -8
+        }
+      },
+      {
+        "id": "b49925735",
+        "distribution": "Uniform",
+        "name": "Rate",
+        "once": false,
+        "params": {
+          "a": "0",
+          "b": "1"
+        },
+        "show": true,
+        "type": "Random Variable",
+        "typeCode": 0,
+        "dims": "1",
+        "units": "",
+        "minimized": false,
+        "pos": {
+          "x": -131,
+          "y": -8
+        }
+      },
+      {
+        "id": "b66056801",
+        "distribution": "Binomial",
+        "params": {
+          "p": "Rate",
+          "n": "Number of trials"
+        },
+        "type": "Observer",
+        "typeCode": 4,
+        "value": "Conversions",
+        "minimized": false,
+        "pos": {
+          "x": 4,
+          "y": 57
+        }
+      }
+    ],
+    "methodParams": {
+      "chains": "3",
+      "samples": "2000",
+      "lag": "30",
+      "burn": "100"
+    }
+  }
+]

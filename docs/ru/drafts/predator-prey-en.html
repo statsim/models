@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en" itemscope itemtype="http://schema.org/Person">
+<html lang="ru" itemscope itemtype="http://schema.org/Person">
 <head>
             <meta charset="utf-8">
         <!-- Site Meta Data -->
-        <title>Compound interest</title>
+        <title>Predator prey model (Lotka–Volterra)</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="Anton Zemlyansky">
@@ -11,18 +11,18 @@
         <link rel="shortcut icon" href="">
 
         <!-- schema.org -->
-        <meta itemprop="name" content="StatSim Models">
+        <meta itemprop="name" content="Модели StatSim">
         <meta itemprop="image" content="">
         <meta itemprop="description" content="">
 
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
         <!-- Style Meta Data -->
-        <link rel="stylesheet" href="https://statsim.com/models/theme/css/style.css" type="text/css"/>
-        <link rel="stylesheet" href="https://statsim.com/models/theme/css/pygments.css" type="text/css"/>
+        <link rel="stylesheet" href="https://statsim.com/models/ru/../theme/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="https://statsim.com/models/ru/../theme/css/pygments.css" type="text/css"/>
 
         <!-- Feed Meta Data -->
-            <link href="https://statsim.com/models/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
-                  title="StatSim Models ATOM Feed"/>
+            <link href="https://statsim.com/models/ru/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+                  title="Модели StatSim ATOM Feed"/>
 
         <!-- Twitter Feed -->
         <meta name="twitter:card" content="summary">
@@ -39,23 +39,23 @@
           </script>
 
     <meta name="twitter:creator" content="statsimcom">
-    <meta name="twitter:url" content="https://statsim.com/models/compound-interest/">
-    <meta name="twitter:title" content="StatSim Models ~ Compound interest">
-    <meta name="twitter:description" content="Compound interest model with annual deposits">
+    <meta name="twitter:url" content="https://statsim.com/models/ru/drafts/predator-prey-en.html">
+    <meta name="twitter:title" content="Модели StatSim ~ Predator prey model (Lotka–Volterra)">
+    <meta name="twitter:description" content="Lotka–Volterra equations (predator–prey equations) are used to model dynamical relationship between predators and they prey">
 
     <!-- Facebook Meta Data -->
-    <meta property="og:title" content="StatSim Models ~ Compound interest"/>
-    <meta property="og:description" content="Compound interest model with annual deposits"/>
+    <meta property="og:title" content="Модели StatSim ~ Predator prey model (Lotka–Volterra)"/>
+    <meta property="og:description" content="Lotka–Volterra equations (predator–prey equations) are used to model dynamical relationship between predators and they prey"/>
     <meta property="og:image" content=""/>
 </head>
 
 <body>
 <!-- Sidebar -->
 <aside>
-    <a href="https://statsim.com/models">
+    <a href="https://statsim.com/models/ru">
       <img src="https://statsim.com/models/images/logo.png" class="logo">
     </a>
-    <h1>StatSim Models</h1>
+    <h1>Модели StatSim</h1>
     <a href="https://statsim.com/models/">English</a>
     <br>
     <a href="https://statsim.com/models/ru/">Russian</a>
@@ -71,13 +71,13 @@
 
     <p class="social">
                 <a href="https://twitter.com/statsimcom" target="_blank"><img
-                        src="https://statsim.com/models/theme/images/icons/twitter.png"></a>
+                        src="https://statsim.com/models/ru/../theme/images/icons/twitter.png"></a>
                 <a href="https://www.facebook.com/statsim" target="_blank"><img
-                        src="https://statsim.com/models/theme/images/icons/facebook.png"></a>
+                        src="https://statsim.com/models/ru/../theme/images/icons/facebook.png"></a>
                 <a href="https://github.com/statsim" target="_blank"><img
-                        src="https://statsim.com/models/theme/images/icons/github.png"></a>
-            <a href="https://statsim.com/models/feeds/all.atom.xml" rel="alternate">
-                <img src="https://statsim.com/models/theme/images/icons/rss.png"></a>
+                        src="https://statsim.com/models/ru/../theme/images/icons/github.png"></a>
+            <a href="https://statsim.com/models/ru/feeds/all.atom.xml" rel="alternate">
+                <img src="https://statsim.com/models/ru/../theme/images/icons/rss.png"></a>
     </p>
 
         <a class="twitter-follow-button"
@@ -102,13 +102,6 @@
             }(document, "script", "twitter-wjs"));
         </script>
 
-        <h2>Categories</h2>
-        <ul class="navbar">
-                <li class="active"><a
-                        href="https://statsim.com/models/category/deterministic-models/">Deterministic models</a></li>
-                <li><a
-                        href="https://statsim.com/models/category/stochastic-models/">Stochastic models</a></li>
-        </ul>
 
         <h2 class="blog_roll_link"><br/>LINKS</h2>
         <ul class="navbar">
@@ -123,11 +116,11 @@
     <section id="content">
         <article>
             <h2 class="post_title post_detail">
-              Compound interest
+              Predator prey model (Lotka–Volterra)
             </h2>
             <div class="entry-content blog-post">
               <div class="post-summary">
-                <p>Compound interest model with annual deposits</p>
+                <p>Lotka–Volterra equations (predator–prey equations) are used to model dynamical relationship between predators and they prey</p>
               </div>
               <style type="text/css">/*!
 *
@@ -1277,7 +1270,20 @@ h6:hover .anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="What-is-Compound-Interest?">What is Compound Interest?<a class="anchor-link" href="#What-is-Compound-Interest?">&#182;</a></h2><p>Compound interest is a special type of loan, deposit or a saving account. After each compound period the interest is reinvested rather than paid. Compound interest of each period is based on both principal and reinvested interests from previous periods. Basically it's "interest on interest" <a href="https://en.wikipedia.org/wiki/Compound_interest">https://en.wikipedia.org/wiki/Compound_interest</a></p>
+<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>Lotka-Volterra equations are used in simplest cases when there's only one predator population and one prey population. The model was developed in the beginning of 20<sup>th</sup> century by Alfred Lotka and Vito Volterra (independently). <a href="https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations">https://en.wikipedia.org/wiki/Lotka-Volterra_equations</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Assumptions">Assumptions<a class="anchor-link" href="#Assumptions">&#182;</a></h2><ul>
+<li>exponential growth of the prey population when the predator is absent</li>
+<li>the predator population will starve if the prey population is 0</li>
+<li>predators can consume infinite amount of prey</li>
+<li>environment is simple (both populations are moving randomly through a homogeneous environment)</li>
+</ul>
 
 </div>
 </div>
@@ -1296,7 +1302,7 @@ h6:hover .anchor-link {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">iframer</span> <span class="k">import</span> <span class="o">*</span>
-<span class="n">iframer</span><span class="p">(</span><span class="s1">&#39;https://statsim.com/app/?m=compound&amp;preview=1&#39;</span><span class="p">)</span>
+<span class="n">iframer</span><span class="p">(</span><span class="s1">&#39;https://statsim.com/app/?m=predatorprey&amp;preview=1&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1316,9 +1322,9 @@ h6:hover .anchor-link {
 <div class="output_html rendered_html output_subarea ">
 
   <div class="iframer-wrapper" style="position: relative; padding-bottom: 550px; padding-top: 25px; height: 0;">
-    <iframe src="https://statsim.com/app/?m=compound&preview=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    <iframe src="https://statsim.com/app/?m=predatorprey&preview=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
   </div><br>
-  <a class="iframer-link" href="https://statsim.com/app/?m=compound&preview=1" target="_blank" style="margin: 10px 0;">Open in statsim.com</a>
+  <a class="iframer-link" href="https://statsim.com/app/?m=predatorprey&preview=1" target="_blank" style="margin: 10px 0;">Open in statsim.com</a>
   
 </div>
 
@@ -1363,17 +1369,17 @@ h6:hover .anchor-link {
             </div>
             <div class="post_list">
                 <span>By </span>
-                <a href="https://statsim.com/models/author/anton-zemlyansky/">Anton Zemlyansky</a>
+                <a href="https://statsim.com/models/ru/author/anton-zemlyansky/">Anton Zemlyansky</a>
                 <span> in </span>
                 <span class="post_category">
-                  <a href="https://statsim.com/models/category/deterministic-models/" rel="bookmark" title="Permalink to Deterministic models">
+                  <a href="https://statsim.com/models/ru/category/deterministic-models/" rel="bookmark" title="Permalink to Deterministic models">
                     Deterministic models
                   </a>
                 </span>
-                <p class="post_date">Sun 24 February 2019</p>
+                <p class="post_date">Fri 08 March 2019</p>
                 <div><span>Tags : </span>
-                            <span><a href="https://statsim.com/models/tag/finance/">#Finance, </a></span>
-                            <span><a href="https://statsim.com/models/tag/calculators/">#Calculators, </a></span>
+                            <span><a href="https://statsim.com/models/ru/tag/system-dynamics/">#System dynamics, </a></span>
+                            <span><a href="https://statsim.com/models/ru/tag/biology/">#Biology, </a></span>
                 </div>
             </div>
         </article>

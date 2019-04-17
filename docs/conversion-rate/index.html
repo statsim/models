@@ -3,7 +3,7 @@
 <head>
             <meta charset="utf-8">
         <!-- Site Meta Data -->
-        <title>Compound interest</title>
+        <title>Conversion rate estimation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="Anton Zemlyansky">
@@ -39,13 +39,13 @@
           </script>
 
     <meta name="twitter:creator" content="statsimcom">
-    <meta name="twitter:url" content="https://statsim.com/models/compound-interest/">
-    <meta name="twitter:title" content="StatSim Models ~ Compound interest">
-    <meta name="twitter:description" content="Compound interest model with annual deposits">
+    <meta name="twitter:url" content="https://statsim.com/models/conversion-rate/">
+    <meta name="twitter:title" content="StatSim Models ~ Conversion rate estimation">
+    <meta name="twitter:description" content="A simple probabilistic model that calculates a website conversion rate given two params (number of total visitors and number of conversions). The output measures uncertainty about the true value of conversion rate">
 
     <!-- Facebook Meta Data -->
-    <meta property="og:title" content="StatSim Models ~ Compound interest"/>
-    <meta property="og:description" content="Compound interest model with annual deposits"/>
+    <meta property="og:title" content="StatSim Models ~ Conversion rate estimation"/>
+    <meta property="og:description" content="A simple probabilistic model that calculates a website conversion rate given two params (number of total visitors and number of conversions). The output measures uncertainty about the true value of conversion rate"/>
     <meta property="og:image" content=""/>
 </head>
 
@@ -104,9 +104,9 @@
 
         <h2>Categories</h2>
         <ul class="navbar">
-                <li class="active"><a
-                        href="https://statsim.com/models/category/deterministic-models/">Deterministic models</a></li>
                 <li><a
+                        href="https://statsim.com/models/category/deterministic-models/">Deterministic models</a></li>
+                <li class="active"><a
                         href="https://statsim.com/models/category/stochastic-models/">Stochastic models</a></li>
         </ul>
 
@@ -123,11 +123,11 @@
     <section id="content">
         <article>
             <h2 class="post_title post_detail">
-              Compound interest
+              Conversion rate estimation
             </h2>
             <div class="entry-content blog-post">
               <div class="post-summary">
-                <p>Compound interest model with annual deposits</p>
+                <p>A simple probabilistic model that calculates a website conversion rate given two params (number of total visitors and number of conversions). The output measures uncertainty about the true value of conversion rate</p>
               </div>
               <style type="text/css">/*!
 *
@@ -1274,29 +1274,13 @@ h6:hover .anchor-link {
 
 .ansi-bold { font-weight: bold; }
 </style>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="What-is-Compound-Interest?">What is Compound Interest?<a class="anchor-link" href="#What-is-Compound-Interest?">&#182;</a></h2><p>Compound interest is a special type of loan, deposit or a saving account. After each compound period the interest is reinvested rather than paid. Compound interest of each period is based on both principal and reinvested interests from previous periods. Basically it's "interest on interest" <a href="https://en.wikipedia.org/wiki/Compound_interest">https://en.wikipedia.org/wiki/Compound_interest</a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Model">Model<a class="anchor-link" href="#Model">&#182;</a></h2><p>Instead of using formulas to get the final value the model simulates all time steps to get historical data.</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="kn">from</span> <span class="nn">iframer</span> <span class="k">import</span> <span class="o">*</span>
-<span class="n">iframer</span><span class="p">(</span><span class="s1">&#39;https://statsim.com/app/?m=compound&amp;preview=1&#39;</span><span class="p">)</span>
+<span class="n">iframer</span><span class="p">(</span><span class="s1">&#39;https://statsim.com/app/?m=conversion-rate&amp;preview=1&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1316,9 +1300,9 @@ h6:hover .anchor-link {
 <div class="output_html rendered_html output_subarea ">
 
   <div class="iframer-wrapper" style="position: relative; padding-bottom: 550px; padding-top: 25px; height: 0;">
-    <iframe src="https://statsim.com/app/?m=compound&preview=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    <iframe src="https://statsim.com/app/?m=conversion-rate&preview=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
   </div><br>
-  <a class="iframer-link" href="https://statsim.com/app/?m=compound&preview=1" target="_blank" style="margin: 10px 0;">Open in statsim.com</a>
+  <a class="iframer-link" href="https://statsim.com/app/?m=conversion-rate&preview=1" target="_blank" style="margin: 10px 0;">Open in statsim.com</a>
   
 </div>
 
@@ -1327,6 +1311,14 @@ h6:hover .anchor-link {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="What-is-Conversion-Rate?">What is Conversion Rate?<a class="anchor-link" href="#What-is-Conversion-Rate?">&#182;</a></h2><p>Conversion rate measures how many users complete a desired goal (a conversion) compared to the total number of users. It's usually calculated as a fraction $n/N$ where $n$ is number of conversions and $N$ - total number of visitors. The output of such model is deterministic and shows only what it calculates - the proportion of visitors during specific period. On the contrary, a probabilistic model encorporates uncertainty about true conversion rate.</p>
+
+</div>
+</div>
 </div>
  
 
@@ -1366,11 +1358,11 @@ h6:hover .anchor-link {
                 <a href="https://statsim.com/models/author/anton-zemlyansky/">Anton Zemlyansky</a>
                 <span> in </span>
                 <span class="post_category">
-                  <a href="https://statsim.com/models/category/deterministic-models/" rel="bookmark" title="Permalink to Deterministic models">
-                    Deterministic models
+                  <a href="https://statsim.com/models/category/stochastic-models/" rel="bookmark" title="Permalink to Stochastic models">
+                    Stochastic models
                   </a>
                 </span>
-                <p class="post_date">Sun 24 February 2019</p>
+                <p class="post_date">Sun 17 March 2019</p>
                 <div><span>Tags : </span>
                             <span><a href="https://statsim.com/models/tag/finance/">#Finance, </a></span>
                             <span><a href="https://statsim.com/models/tag/calculators/">#Calculators, </a></span>
