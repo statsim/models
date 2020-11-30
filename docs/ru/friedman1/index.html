@@ -3,7 +3,7 @@
 <head>
             <meta charset="utf-8">
         <!-- Site Meta Data -->
-        <title>Friedman-1 synthetic dataset</title>
+        <title>Синтетические данные Friedman-1</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="List of deterministic and probabilistic models you can run and fit in StatSim">
         <meta name="author" content="">
@@ -41,13 +41,13 @@
           </script>
 
     <meta name="twitter:creator" content="">
-    <meta name="twitter:url" content="https://statsim.com/models/ru/drafts/friedman1-en.html">
-    <meta name="twitter:title" content="Модели StatSim ~ Friedman-1 synthetic dataset">
-    <meta name="twitter:description" content="Generate a synthetic dataset using the Friedman-1 function implemented in StatSim">
+    <meta name="twitter:url" content="https://statsim.com/models/ru/friedman1/">
+    <meta name="twitter:title" content="Модели StatSim ~ Синтетические данные Friedman-1">
+    <meta name="twitter:description" content="Генерация искусственных данных на основе функции Friedman-1 воплощенной в StatSim">
 
     <!-- Facebook Meta Data -->
-    <meta property="og:title" content="Модели StatSim ~ Friedman-1 synthetic dataset"/>
-    <meta property="og:description" content="Generate a synthetic dataset using the Friedman-1 function implemented in StatSim"/>
+    <meta property="og:title" content="Модели StatSim ~ Синтетические данные Friedman-1"/>
+    <meta property="og:description" content="Генерация искусственных данных на основе функции Friedman-1 воплощенной в StatSim"/>
     <meta property="og:image" content=""/>
 </head>
 
@@ -77,6 +77,11 @@
     </p>
 
 
+        <h2>Categories</h2>
+        <ul class="navbar">
+                <li class="active"><a
+                        href="https://statsim.com/models/ru/category/sinteticheskie-dannye/">Синтетические данные</a></li>
+        </ul>
 
 
 </aside>
@@ -86,11 +91,11 @@
     <section id="content">
         <article>
             <h2 class="post_title post_detail">
-              Friedman-1 synthetic dataset
+              Синтетические данные Friedman-1
             </h2>
             <div class="entry-content blog-post">
               <div class="post-summary">
-                <p>Generate a synthetic dataset using the Friedman-1 function implemented in StatSim</p>
+                <p>Генерация искусственных данных на основе функции Friedman-1 воплощенной в StatSim</p>
               </div>
               <style type="text/css">/*!
 *
@@ -1282,7 +1287,7 @@ h6:hover .anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Friedman-1-model">Friedman-1 model<a class="anchor-link" href="#Friedman-1-model">&#182;</a></h2><p>This dataset was described in the <a href="http://www.stat.yale.edu/~lc436/08Spring665/Mars_Friedman_91.pdf">Multivariate Adaptive Regression Splines</a> paper by Jerome H. Friedman in 1991. All features $\mathbf{x}$ are independent uniform random variables taking values from 0 to 1. The output $y$ is calculated with the formula:</p>
+<h2 id="&#1052;&#1086;&#1076;&#1077;&#1083;&#1100;-Friedman-1">&#1052;&#1086;&#1076;&#1077;&#1083;&#1100; Friedman-1<a class="anchor-link" href="#&#1052;&#1086;&#1076;&#1077;&#1083;&#1100;-Friedman-1">&#182;</a></h2><p>Синтетический датасет Friedman-1 был впервые описан в работе <a href="http://www.stat.yale.edu/~lc436/08Spring665/Mars_Friedman_91.pdf">Multivariate Adaptive Regression Splines</a> Джерома Фридмана в 1991. Все вводные параметры $\mathbf{x}$ являются независимыми случайными переменными равномерно распределенными на интервале от 0 до 1. Результат $y$ рассчитывается по формуле:</p>
 $$ f(\mathbf{x}) = 10 sin(\pi x_1 x_2) + 20 (x_3 - 0.5)^2 + 10 x_4 + 5 x_5 + \mathcal{N}(0, sigma) $$<p></p>
 
 </div>
@@ -1291,7 +1296,7 @@ $$ f(\mathbf{x}) = 10 sin(\pi x_1 x_2) + 20 (x_3 - 0.5)^2 + 10 x_4 + 5 x_5 + \ma
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>By default ten $\mathbf{x}$ variables are generated, from which only first 5 are used in the formula. That makes this dataset useful for testing feature selection methods too.</p>
+<p>По умолчани, генерируются 10 различных переменных $\mathbf{x}$, из которых только первые 5 используются в формуле. Это делает такой датасет удобным для проверки методов отбора переменных.</p>
 
 </div>
 </div>
@@ -1299,10 +1304,36 @@ $$ f(\mathbf{x}) = 10 sin(\pi x_1 x_2) + 20 (x_3 - 0.5)^2 + 10 x_4 + 5 x_5 + \ma
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>After generating the data click <strong>Download (CSV)</strong> to download the dataset in the CSV format.</p>
+<p>После успешной генерации, нажмте на <strong>Download (CSV)</strong> для загрузки данных на локальный диск.</p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Этот датасет также доступен в:</p>
+<ul>
+<li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_friedman1.html">sklearn.datasets.make_friedman1</a> (Python)</li>
+<li><a href="https://cran.r-project.org/web/packages/mlbench/index.html">MLBench</a> (R)</li>
+<li><a href="https://statsim.com/gen/">StatSim Gen</a> (Web)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
  
 
@@ -1341,11 +1372,11 @@ $$ f(\mathbf{x}) = 10 sin(\pi x_1 x_2) + 20 (x_3 - 0.5)^2 + 10 x_4 + 5 x_5 + \ma
 
             <div class="post_list">
                 <span>By </span>
-                <a href="https://statsim.com/models/ru/author/anton-zemlyansky/">Anton Zemlyansky</a>
+                <a href="https://statsim.com/models/ru/author/anton-zemlianskii/">Антон Землянский</a>
                 <span> in </span>
                 <span class="post_category">
-                  <a href="https://statsim.com/models/ru/category/synthetic-data/" rel="bookmark" title="Permalink to Synthetic data">
-                    Synthetic data
+                  <a href="https://statsim.com/models/ru/category/sinteticheskie-dannye/" rel="bookmark" title="Permalink to Синтетические данные">
+                    Синтетические данные
                   </a>
                 </span>
                 <p class="post_date">Mon 30 November 2020</p>

@@ -1211,6 +1211,19 @@ $$ f(\mathbf{x}) = 10 sin(\pi x_1 x_2) + 20 (x_3 - 0.5)^2 + 10 x_4 + 5 x_5 + \ma
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Also availaible in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_friedman1.html"&gt;sklearn.datasets.make_friedman1&lt;/a&gt; (Python)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://cran.r-project.org/web/packages/mlbench/index.html"&gt;MLBench&lt;/a&gt; (R)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://statsim.com/gen/"&gt;StatSim Gen&lt;/a&gt; (Web)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
  
 
 
