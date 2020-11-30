@@ -1198,7 +1198,7 @@ $$ f(\mathbf{x}) = 10 sin(\pi x_1 x_2) + 20 (x_3 - 0.5)^2 + 10 x_4 + 5 x_5 + \ma
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;По умолчани, генерируются 10 различных переменных $\mathbf{x}$, из которых только первые 5 используются в формуле. Это делает такой датасет удобным для проверки методов отбора переменных.&lt;/p&gt;
+&lt;p&gt;По умолчанию, генерируются 10 различных переменных $\mathbf{x}$, из которых только первые 5 используются в формуле. Это делает такой датасет удобным для проверки методов отбора переменных.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1206,7 +1206,7 @@ $$ f(\mathbf{x}) = 10 sin(\pi x_1 x_2) + 20 (x_3 - 0.5)^2 + 10 x_4 + 5 x_5 + \ma
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;После успешной генерации, нажмте на &lt;strong&gt;Download (CSV)&lt;/strong&gt; для загрузки данных на локальный диск.&lt;/p&gt;
+&lt;p&gt;После успешной генерации, нажмите &lt;strong&gt;Download (CSV)&lt;/strong&gt; для загрузки данных на локальный диск.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1223,19 +1223,6 @@ $$ f(\mathbf{x}) = 10 sin(\pi x_1 x_2) + 20 (x_3 - 0.5)^2 + 10 x_4 + 5 x_5 + \ma
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
 &lt;/div&gt;
  
 
