@@ -1,21 +1,23 @@
 <!doctype html>
-<html lang="en" itemscope itemtype="http://schema.org/Person">
+<html lang="en">
 <head>
                 <meta charset="utf-8">
         <!-- Site Meta Data -->
         <title>StatSim Models - Anton Zemlyansky</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="Anton Zemlyansky">
+        <meta name="description" content="List of deterministic and probabilistic models you can run and fit in StatSim">
+        <meta name="author" content="">
 
         <link rel="shortcut icon" href="">
 
         <!-- schema.org -->
         <meta itemprop="name" content="StatSim Models">
         <meta itemprop="image" content="">
-        <meta itemprop="description" content="">
+        <meta itemprop="description" content="List of deterministic and probabilistic models you can run and fit in StatSim">
 
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <!-- Font -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
         <!-- Style Meta Data -->
         <link rel="stylesheet" href="https://statsim.com/models/theme/css/style.css" type="text/css"/>
         <link rel="stylesheet" href="https://statsim.com/models/theme/css/pygments.css" type="text/css"/>
@@ -26,7 +28,7 @@
 
         <!-- Twitter Feed -->
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="statsimcom">
+        <meta name="twitter:site" content="">
         <meta name="twitter:image" content="">
 
           <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -38,7 +40,7 @@
             gtag('config', 'UA-7770107-2');
           </script>
 
-    <meta name="twitter:creator" content="statsimcom">
+    <meta name="twitter:creator" content="">
     <meta name="twitter:url" content="https://statsim.com/models">
     <meta name="twitter:title" content="StatSim Models">
     <meta name="twitter:description" content="">
@@ -48,7 +50,7 @@
     <meta property="og:description" content=""/>
     <meta property="og:image" content=""/>
 
-    <meta name="twitter:creator" content="statsimcom">
+    <meta name="twitter:creator" content="">
     <meta name="twitter:url" content="https://statsim.com/models/author/anton-zemlyansky/">
     <meta name="twitter:title" content="StatSim Models ~ Anton Zemlyansky">
     <meta name="twitter:description" content="Articles de Anton Zemlyansky">
@@ -62,20 +64,14 @@
 <body>
 <!-- Sidebar -->
 <aside>
-    <a href="https://statsim.com/models">
+    <a href="https://statsim.com/models/">
       <img src="https://statsim.com/models/images/logo.png" class="logo">
     </a>
     <h1>StatSim Models</h1>
-    <a href="https://statsim.com/models/">English</a>
-    <br>
-    <a href="https://statsim.com/models/ru/">Russian</a>
-    <br>
+    <a href="https://statsim.com/models/">En</a> - <a href="https://statsim.com/models/ru/">Ru</a>
 
     <nav class="nav">
         <ul class="list-bare">
-
-
-
         </ul>
     </nav>
 
@@ -90,41 +86,19 @@
                 <img src="https://statsim.com/models/theme/images/icons/rss.png"></a>
     </p>
 
-        <a class="twitter-follow-button"
-           href="https://twitter.com/statsimcom"
-           data-show-count="false"
-           data-lang="en">
-            Follow @twitterdev
-        </a>
-        <script type="text/javascript">
-            window.twttr = (function (d, s, id) {
-                var t, js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = "https://platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
-                return window.twttr || (t = {
-                        _e: [], ready: function (f) {
-                            t._e.push(f)
-                        }
-                    });
-            }(document, "script", "twitter-wjs"));
-        </script>
 
         <h2>Categories</h2>
         <ul class="navbar">
                 <li><a
+                        href="https://statsim.com/models/category/bayesian-inference/">Bayesian inference</a></li>
+                <li><a
                         href="https://statsim.com/models/category/deterministic-models/">Deterministic models</a></li>
                 <li><a
                         href="https://statsim.com/models/category/stochastic-models/">Stochastic models</a></li>
+                <li><a
+                        href="https://statsim.com/models/category/synthetic-data/">Synthetic data</a></li>
         </ul>
 
-        <h2 class="blog_roll_link"><br/>LINKS</h2>
-        <ul class="navbar">
-                <li><a href="https://statsim.com/">StatSim</a></li>
-                <li><a href="https://analyze.li">Analyze.li</a></li>
-        </ul>
 
 </aside>
 
@@ -132,32 +106,58 @@
 <article>
         <ol class="posts">
                 <li class="post_list"><p class="post_entry">
-                    <h2 class="post_title"><a href="https://statsim.com/models/bayesian-ab-testing/" rel="bookmark"
-                                              title="Permalink to Bayesian A/B testing">Bayesian A/B testing</a>
+                    <h2 class="post_title">
+                      <a href="https://statsim.com/models/friedman1/" rel="bookmark" title="Permalink to Friedman-1 synthetic dataset">
+                        Friedman-1 synthetic dataset
+                      </a>
+                    </h2>
+                        <p><p>Generate a synthetic dataset using the Friedman-1 function implemented in StatSim</p></p>
+                </li>
+                <li class="post_list"><p class="post_entry">
+                    <h2 class="post_title">
+                      <a href="https://statsim.com/models/robust-linear-regression/" rel="bookmark" title="Permalink to Bayesian robust linear regression">
+                        Bayesian robust linear regression
+                      </a>
+                    </h2>
+                        <p><p>Assuming non-gaussian noise and existed outliers, find linear relationship between explanatory (independent) and response (dependent) variables, predict future values.</p></p>
+                </li>
+                <li class="post_list"><p class="post_entry">
+                    <h2 class="post_title">
+                      <a href="https://statsim.com/models/bayesian-ab-testing/" rel="bookmark" title="Permalink to Bayesian A/B testing">
+                        Bayesian A/B testing
+                      </a>
                     </h2>
                         <p><p>Compare conversion rates and calculate how likely one option is better than another in a probabilistic (bayesian) fashion.</p></p>
                 </li>
                 <li class="post_list"><p class="post_entry">
-                    <h2 class="post_title"><a href="https://statsim.com/models/linear-regression/" rel="bookmark"
-                                              title="Permalink to Bayesian linear regression">Bayesian linear regression</a>
+                    <h2 class="post_title">
+                      <a href="https://statsim.com/models/linear-regression/" rel="bookmark" title="Permalink to Bayesian linear regression">
+                        Bayesian linear regression
+                      </a>
                     </h2>
                         <p><p>Find linear relationship between variables in Bayesian way (using probability to measure uncertainty)</p></p>
                 </li>
                 <li class="post_list"><p class="post_entry">
-                    <h2 class="post_title"><a href="https://statsim.com/models/conversion-rate/" rel="bookmark"
-                                              title="Permalink to Conversion rate estimation">Conversion rate estimation</a>
+                    <h2 class="post_title">
+                      <a href="https://statsim.com/models/conversion-rate/" rel="bookmark" title="Permalink to Conversion rate estimation">
+                        Conversion rate estimation
+                      </a>
                     </h2>
                         <p><p>A simple probabilistic model that calculates a website conversion rate given two params (number of total visitors and number of conversions). The output measures uncertainty about the true value of conversion rate</p></p>
                 </li>
                 <li class="post_list"><p class="post_entry">
-                    <h2 class="post_title"><a href="https://statsim.com/models/predator-prey/" rel="bookmark"
-                                              title="Permalink to Predator prey model (Lotka–Volterra)">Predator prey model (Lotka–Volterra)</a>
+                    <h2 class="post_title">
+                      <a href="https://statsim.com/models/predator-prey/" rel="bookmark" title="Permalink to Predator prey model (Lotka–Volterra)">
+                        Predator prey model (Lotka–Volterra)
+                      </a>
                     </h2>
                         <p><p>Lotka–Volterra equations (predator–prey equations) are used to model dynamical relationship between predators and they prey</p></p>
                 </li>
                 <li class="post_list"><p class="post_entry">
-                    <h2 class="post_title"><a href="https://statsim.com/models/compound-interest/" rel="bookmark"
-                                              title="Permalink to Compound interest">Compound interest</a>
+                    <h2 class="post_title">
+                      <a href="https://statsim.com/models/compound-interest/" rel="bookmark" title="Permalink to Compound interest">
+                        Compound interest
+                      </a>
                     </h2>
                         <p><p>Compound interest model with annual deposits</p></p>
                 </li>

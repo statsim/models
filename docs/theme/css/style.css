@@ -21,6 +21,11 @@ h2.post_detail, .post-summary {
   color: #8c8c96;
 }
 
+.next-post {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
 .twitter-follow-button {
   display: block;
   margin: 15px auto;
@@ -127,13 +132,13 @@ article > header {
 }
 
 a {
-  color: #9f9da4;
-  text-decoration:none;
+  color: #006fc9;
+  text-decoration: none;
 }
 
 a:hover {
   color: #008ACC;
-  text-decoration:none;
+  text-decoration: underline;
 }
 
 
@@ -161,17 +166,17 @@ div.output_area {
 
 /* Sidebar */
 aside {
-  font-size: 14px;
-  width: 220px; height: 100%;
-  position: fixed;
-  top: 0; left: 0;
-  padding: 30px;
   background-color: white;
-  box-shadow: 0 0 50px #DDD;
-  color: #222;
-  text-align: center;
-  padding-top: 1%;
   background-size: cover;
+  border-right: 1px solid #ECECEC;
+  color: #222;
+  font-size: 14px;
+  padding-top: 1%;
+  padding: 30px;
+  position: fixed;
+  text-align: center;
+  top: 0; left: 0;
+  width: 220px; height: 100%;
 }
 
 aside > ul {
@@ -309,6 +314,7 @@ aside .logo {
     width: 100%;
     padding: 0;
     padding-top: 1px;
+    border-bottom: 1px solid #ECECEC;
   }
 
   .nav

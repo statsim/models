@@ -1,16 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from pelican_jupyter import markup as nb_markup
 
-AUTHOR = u'Anton Zemlyansky'
+#AUTHOR = u'Anton Zemlyansky'
 SITENAME = u'StatSim Models'
+DESCRIPTION = 'List of deterministic and probabilistic models you can run and fit in StatSim'
 
 SITEURL = ''
 BASEURL = ''
 
 PATH = 'content'
 OUTPUT_PATH = 'docs'
-STATIC_PATHS = (['.', 'images'])
+STATIC_PATHS = (['images'])
 
 TIMEZONE = 'Europe/Paris'
 LOCALE = 'en_US.UTF-8'
@@ -25,10 +27,10 @@ AUTHOR_FEED_RSS = None
 
 
 # Blogroll
-LINKS = (
-  ('StatSim', 'https://statsim.com/'),
-  ('Analyze.li', 'https://analyze.li')
-)
+# LINKS = (
+#   ('StatSim', 'https://statsim.com/'),
+#   ('Analyze.li', 'https://analyze.li')
+# )
 
 # Social widget
 SOCIAL = (
@@ -37,15 +39,18 @@ SOCIAL = (
  ('Github', 'https://github.com/statsim')
 )
 
-PLUGIN_PATHS = ['./plugins']
-PLUGINS = ['i18n_subsites', 'ipynb.markup']
+PLUGIN_PATHS = ['/home/anton/tools/pelican-plugins']
+
+MARKUP = ("md", "ipynb")
+PLUGINS = ['i18n_subsites', nb_markup]
+
 I18N_SUBSITES = {
   'ru': {
     'SITENAME': 'Модели StatSim'
   }
 }
 
-IGNORE_FILES = ['*-checkpoint.ipynb', '*.js', '*.py', '__pycache__', '*.pyc', '*.nbdata']
+IGNORE_FILES = ['.ipynb_checkpoints', '*-checkpoint.ipynb', '*.js', '*.py', '__pycache__', '*.pyc']
 
 THEME = 'theme'
 DISPLAY_FOOTER = False
@@ -72,7 +77,7 @@ TAGS_SAVE_AS = 'tag/index.html'
 
 DELETE_OUTPUT_DIRECTORY = True
 
-TWITTER_USERNAME = 'statsimcom'
+# TWITTER_USERNAME = 'statsimcom'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

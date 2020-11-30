@@ -11,11 +11,12 @@ StatSim examples
 * [Pi approximation](https://statsim.com/app/?m=pi)
 
 ## Bayesian inference
-* [Conversion rate estimation](https://statsim.com/app/?m=conversion-rate)
+* [Base rate fallacy](https://statsim.com/app/?m=brt)
 * [Bayesian A/B testing](https://statsim.com/app/?m=abtest)
-* [Messages (from BMFH ch.1)](https://statsim.com/app/?m=messages)
-* [Linear regression](https://statsim.com/app/?m=linreg)
+* [Conversion rate estimation](https://statsim.com/app/?m=conversion-rate)
 * [First-order autoregressive model (AR1)](https://statsim.com/app/?m=autoreg)
+* [Linear regression](https://statsim.com/app/?m=linreg)
+* [Messages (from BMFH ch.1)](https://statsim.com/app/?m=messages)
 
 ## Working with multiple models
 * [Pareto distribution from scratch](https://statsim.com/app/?m=pareto)

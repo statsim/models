@@ -1,0 +1,8 @@
+Title: Bayesian robust linear regression
+Slug: robust-linear-regression
+Lang: en
+Date: 2019-04-23 20:00
+Category: Bayesian inference
+Tags: Regression
+Author: Anton Zemlyansky
+Summary: Assuming non-gaussian noise and existed outliers, find linear relationship between explanatory (independent) and response (dependent) variables, predict future values. 

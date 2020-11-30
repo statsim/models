@@ -1,0 +1,8 @@
+title: Friedman-1 synthetic dataset
+slug: friedman1
+lang: en
+date: 2020-11-30 20:00
+category: Synthetic data
+tags: 
+author: Anton Zemlyansky
+summary: Generate a synthetic dataset using the Friedman-1 function implemented in StatSim

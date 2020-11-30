@@ -1,109 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-            <meta charset="utf-8">
-        <!-- Site Meta Data -->
-        <title>Compound interest</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="List of deterministic and probabilistic models you can run and fit in StatSim">
-        <meta name="author" content="">
-
-        <link rel="shortcut icon" href="">
-
-        <!-- schema.org -->
-        <meta itemprop="name" content="StatSim Models">
-        <meta itemprop="image" content="">
-        <meta itemprop="description" content="List of deterministic and probabilistic models you can run and fit in StatSim">
-
-        <!-- Font -->
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-
-        <!-- Style Meta Data -->
-        <link rel="stylesheet" href="https://statsim.com/models/theme/css/style.css" type="text/css"/>
-        <link rel="stylesheet" href="https://statsim.com/models/theme/css/pygments.css" type="text/css"/>
-
-        <!-- Feed Meta Data -->
-            <link href="https://statsim.com/models/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
-                  title="StatSim Models ATOM Feed"/>
-
-        <!-- Twitter Feed -->
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="">
-        <meta name="twitter:image" content="">
-
-          <!-- Global site tag (gtag.js) - Google Analytics -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7770107-2"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-7770107-2');
-          </script>
-
-    <meta name="twitter:creator" content="">
-    <meta name="twitter:url" content="https://statsim.com/models/compound-interest/">
-    <meta name="twitter:title" content="StatSim Models ~ Compound interest">
-    <meta name="twitter:description" content="Compound interest model with annual deposits">
-
-    <!-- Facebook Meta Data -->
-    <meta property="og:title" content="StatSim Models ~ Compound interest"/>
-    <meta property="og:description" content="Compound interest model with annual deposits"/>
-    <meta property="og:image" content=""/>
-</head>
-
-<body>
-<!-- Sidebar -->
-<aside>
-    <a href="https://statsim.com/models/">
-      <img src="https://statsim.com/models/images/logo.png" class="logo">
-    </a>
-    <h1>StatSim Models</h1>
-    <a href="https://statsim.com/models/">En</a> - <a href="https://statsim.com/models/ru/">Ru</a>
-
-    <nav class="nav">
-        <ul class="list-bare">
-        </ul>
-    </nav>
-
-    <p class="social">
-                <a href="https://twitter.com/statsimcom" target="_blank"><img
-                        src="https://statsim.com/models/theme/images/icons/twitter.png"></a>
-                <a href="https://www.facebook.com/statsim" target="_blank"><img
-                        src="https://statsim.com/models/theme/images/icons/facebook.png"></a>
-                <a href="https://github.com/statsim" target="_blank"><img
-                        src="https://statsim.com/models/theme/images/icons/github.png"></a>
-            <a href="https://statsim.com/models/feeds/all.atom.xml" rel="alternate">
-                <img src="https://statsim.com/models/theme/images/icons/rss.png"></a>
-    </p>
-
-
-        <h2>Categories</h2>
-        <ul class="navbar">
-                <li><a
-                        href="https://statsim.com/models/category/bayesian-inference/">Bayesian inference</a></li>
-                <li class="active"><a
-                        href="https://statsim.com/models/category/deterministic-models/">Deterministic models</a></li>
-                <li><a
-                        href="https://statsim.com/models/category/stochastic-models/">Stochastic models</a></li>
-                <li><a
-                        href="https://statsim.com/models/category/synthetic-data/">Synthetic data</a></li>
-        </ul>
-
-
-</aside>
-
-<!-- Content -->
-<article>
-    <section id="content">
-        <article>
-            <h2 class="post_title post_detail">
-              Compound interest
-            </h2>
-            <div class="entry-content blog-post">
-              <div class="post-summary">
-                <p>Compound interest model with annual deposits</p>
-              </div>
-              <style type="text/css">/*!
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>StatSim Models - Synthetic data</title><link href="https://statsim.com/models/" rel="alternate"></link><link href="https://statsim.com/models/feeds/synthetic-data.atom.xml" rel="self"></link><id>https://statsim.com/models/</id><updated>2020-11-30T20:00:00+01:00</updated><entry><title>Friedman-1 synthetic dataset</title><link href="https://statsim.com/models/friedman1/" rel="alternate"></link><published>2020-11-30T20:00:00+01:00</published><updated>2020-11-30T20:00:00+01:00</updated><author><name>Anton Zemlyansky</name></author><id>tag:statsim.com,2020-11-30:/models/friedman1/</id><summary type="html">&lt;p&gt;Generate a synthetic dataset using the Friedman-1 function implemented in StatSim&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -465,7 +361,7 @@ div.unrecognized_cell .inner_cell a:hover {
   text-decoration: none;
 }
 @media (max-width: 540px) {
-  div.unrecognized_cell > div.prompt {
+  div.unrecognized_cell &gt; div.prompt {
     display: none;
   }
 }
@@ -518,19 +414,19 @@ div.input_prompt {
   color: #303F9F;
   border-top: 1px solid transparent;
 }
-div.input_area > div.highlight {
+div.input_area &gt; div.highlight {
   margin: 0.4em;
   border: none;
   padding: 0px;
   background-color: transparent;
 }
-div.input_area > div.highlight > pre {
+div.input_area &gt; div.highlight &gt; pre {
   margin: 0px;
   border: none;
   padding: 0px;
   background-color: transparent;
 }
-/* The following gets added to the <head> if it is detected that the user has a
+/* The following gets added to the &lt;head&gt; if it is detected that the user has a
  * monospace font with inconsistent normal/bold/italic height.  See
  * notebookmain.js.  Such fonts will have keywords vertically offset with
  * respect to the rest of the text.  The user should select a better font.
@@ -591,7 +487,7 @@ div.input_area > div.highlight > pre {
 }
 /*
 
-Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+Original style from softwaremaniacs.org (c) Ivan Sagalaev &lt;Maniac@SoftwareManiacs.Org&gt;
 Adapted from GitHub theme
 
 */
@@ -835,7 +731,7 @@ div.output_area img.unconfined,
 div.output_area svg.unconfined {
   max-width: none;
 }
-div.output_area .mglyph > img {
+div.output_area .mglyph &gt; img {
   max-width: none;
 }
 /* This is needed to protect the pre formating from global settings such
@@ -1073,7 +969,7 @@ div.text_cell {
   align-items: stretch;
 }
 @media (max-width: 540px) {
-  div.text_cell > div.prompt {
+  div.text_cell &gt; div.prompt {
     display: none;
   }
 }
@@ -1145,8 +1041,8 @@ h6:hover .anchor-link {
   font-size: 100%;
   font-style: italic;
 }
-</style>
-<style type="text/css"> .highlight pre  .hll { background-color: #ffffcc }
+&lt;/style&gt;
+&lt;style type="text/css"&gt; .highlight pre  .hll { background-color: #ffffcc }
  .highlight pre   { background: #f8f8f8; }
  .highlight pre  .c { color: #408080; font-style: italic } /* Comment */
  .highlight pre  .err { border: 1px solid #FF0000 } /* Error */
@@ -1214,8 +1110,8 @@ h6:hover .anchor-link {
  .highlight pre  .vg { color: #19177C } /* Name.Variable.Global */
  .highlight pre  .vi { color: #19177C } /* Name.Variable.Instance */
  .highlight pre  .vm { color: #19177C } /* Name.Variable.Magic */
- .highlight pre  .il { color: #666666 } /* Literal.Number.Integer.Long */</style>
-<style type="text/css">
+ .highlight pre  .il { color: #666666 } /* Literal.Number.Integer.Long */&lt;/style&gt;
+&lt;style type="text/css"&gt;
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -1251,65 +1147,74 @@ h6:hover .anchor-link {
 .ansi-white-intense-bg { background-color: #A1A6B2; }
 
 .ansi-bold { font-weight: bold; }
-</style>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="What-is-Compound-Interest?">What is Compound Interest?<a class="anchor-link" href="#What-is-Compound-Interest?">&#182;</a></h2><p>Compound interest is a special type of loan, deposit or a saving account. After each compound period the interest is reinvested rather than paid. Compound interest of each period is based on both principal and reinvested interests from previous periods. Basically it's "interest on interest" <a href="https://en.wikipedia.org/wiki/Compound_interest">https://en.wikipedia.org/wiki/Compound_interest</a></p>
+&lt;/style&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[1]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;iframer&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+&lt;span class="n"&gt;iframer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;https://statsim.com/app/?m=friedman1&amp;amp;preview=1&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Model">Model<a class="anchor-link" href="#Model">&#182;</a></h2><p>Instead of using formulas to get the final value the model simulates all time steps to get historical data.</p>
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">iframer</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">iframer</span><span class="p">(</span><span class="s1">&#39;https://statsim.com/app/?m=compound&amp;preview=1&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
 
 
-<div class="output_area">
+&lt;div class="output_area"&gt;
 
-    <div class="prompt"></div>
+    &lt;div class="prompt"&gt;&lt;/div&gt;
 
 
 
-<div class="output_html rendered_html output_subarea ">
+&lt;div class="output_html rendered_html output_subarea "&gt;
 
-  <div class="iframer-wrapper" style="position: relative; padding-bottom: 550px; padding-top: 25px; height: 0;">
-    <iframe src="https://statsim.com/app/?m=compound&preview=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-  </div><br>
-  <a class="iframer-link" href="https://statsim.com/app/?m=compound&preview=1" target="_blank" style="margin: 10px 0;">Open in statsim.com</a>
+  &lt;div class="iframer-wrapper" style="position: relative; padding-bottom: 550px; padding-top: 25px; height: 0;"&gt;
+    &lt;iframe src="https://statsim.com/app/?m=friedman1&amp;preview=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"&gt;&lt;/iframe&gt;
+  &lt;/div&gt;&lt;br&gt;
+  &lt;a class="iframer-link" href="https://statsim.com/app/?m=friedman1&amp;preview=1" target="_blank" style="margin: 10px 0;"&gt;Open in statsim.com&lt;/a&gt;
   
-</div>
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
 
-</div>
-</div>
+&lt;/div&gt;
+&lt;/div&gt;
 
-</div>
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Friedman-1-model"&gt;Friedman-1 model&lt;a class="anchor-link" href="#Friedman-1-model"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This dataset was described in the &lt;a href="http://www.stat.yale.edu/~lc436/08Spring665/Mars_Friedman_91.pdf"&gt;Multivariate Adaptive Regression Splines&lt;/a&gt; paper by Jerome H. Friedman in 1991. All features $\mathbf{x}$ are independent uniform random variables taking values from 0 to 1. The output $y$ is calculated with the formula:&lt;/p&gt;
+$$ f(\mathbf{x}) = 10 sin(\pi x_1 x_2) + 20 (x_3 - 0.5)^2 + 10 x_4 + 5 x_5 + \mathcal{N}(0, sigma) $$&lt;p&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;By default ten $\mathbf{x}$ variables are generated, from which only first 5 are used in the formula. That makes this dataset useful for testing feature selection methods too.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;After generating the data click &lt;strong&gt;Download (CSV)&lt;/strong&gt; to download the dataset in the CSV format.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
  
 
 
-<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var mathjaxscript = document.createElement('script');
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
@@ -1336,40 +1241,5 @@ h6:hover .anchor-link {
         "}); ";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-</script>
-
-
-            </div>
-
-            <div class="post_list">
-                <span>By </span>
-                <a href="https://statsim.com/models/author/anton-zemlyansky/">Anton Zemlyansky</a>
-                <span> in </span>
-                <span class="post_category">
-                  <a href="https://statsim.com/models/category/deterministic-models/" rel="bookmark" title="Permalink to Deterministic models">
-                    Deterministic models
-                  </a>
-                </span>
-                <p class="post_date">Sun 24 February 2019</p>
-                <div><span>Tags : </span>
-                            <span><a href="https://statsim.com/models/tag/finance/">#Finance, </a></span>
-                            <span><a href="https://statsim.com/models/tag/calculators/">#Calculators, </a></span>
-                </div>
-            </div>
-
-        </article>
-    </section>
-</article>
-
-<!-- Footer -->
-
-
-<!-- Hide code blocks with specific words -->
-<script>
-  Array
-    .from(document.querySelectorAll('div.input'))
-    .filter(node => /(\/\/\/|\#\#\#|iframer)/i.test(node.innerHTML))
-    .forEach(node => node.style.display = 'none')
-</script>
-</body>
-</html>
+&lt;/script&gt;
+</content><category term="Synthetic data"></category></entry></feed>
